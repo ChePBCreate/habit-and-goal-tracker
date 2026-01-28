@@ -3,6 +3,9 @@
 # Description:
 A simple habit and goal tracking calendar created using Javascript, HTML, and CSS. Helps to visualise and track progress on personal goals or habits.
 
+# Video Demonstration
+https://youtu.be/iLkUBwJCJ3w
+
 ## Features
 - Allows users to set and edit a goal or habit title.
 - Clickable days to mark down goal or habit progression.
