@@ -1,0 +1,124 @@
+body {
+    background-image: url(cherry-drawing.png);
+    background-size: 300px;
+    background-color: rgb(147, 72, 201);
+    background-blend-mode:luminosity;
+    text-align: center;
+    font-family: 'Street Humouresque', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#title {
+    margin-top: 100px;
+    line-height: 15px;
+    font-size: 50px;
+}
+
+#subtitle {
+    opacity: 0.9;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#calendarContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#calendarDiv {
+    background-color: rgb(237, 213, 255);
+    border-radius: 10px 10px 20px 20px;
+    margin: 40px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    min-width: 280px;
+}
+
+#calendarHeading {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px purple;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 20px;
+    font-size: 28px;
+    background-color: rgb(185, 143, 224);
+    line-height: 0px;
+}
+
+#calendarContent {
+    border: solid 2px purple;
+    padding: 12px 20px;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.day {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.day.completed {
+  background-color: rgb(170, 100, 224);
+}
+
+.day.incomplete {
+  background-color: rgb(202, 155, 237);
+}
+
+
+.current-day {
+    border: 3px solid rgb(203, 145, 253);
+    color: rgb(85, 3, 88);
+}
+
+/*BULLSEYE EFFECT*/
+
+.current-day {
+    position: relative;
+    border: 2px solid rgb(110, 40, 179);
+    color: rgb(110, 40, 179);
+    text-decoration: underline;
+}
+
+.current-day::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 2px solid rgb(110, 40, 179);
+    border-radius: 50%;
+}
+
+.current-day::after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    border: 2px solid rgb(110, 40, 179);
+    border-radius: 50%;
+}
+
+
+#resetButton {
+    background-color: rgb(170, 100, 224);
+    border-style: solid;
+    border-color: rgb(85, 3, 88);
+    border-radius: 8px;
+    color: white;
+    font-family: 'Street Humouresque', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
