@@ -27,7 +27,7 @@ A simple habit and goal tracking calendar created using Javascript, HTML, and CS
 ## What I Learned
 - Working with Javascript dates as well as the built-in Date object.
 - Handling user input and click events.
-- Saving and laoding data using browser localStorage.
+- Saving and loading data using browser localStorage.
 - Styling in Javascript and using CSS classes to update visual state of elements.
 
 ## Changes and modifications:
